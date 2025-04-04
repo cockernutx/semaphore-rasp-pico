@@ -7,14 +7,13 @@
 use bsp::entry;
 use defmt::*;
 use defmt_rtt as _;
-use embedded_hal::digital::v2::OutputPin;
 use panic_probe as _;
 
 // Provide an alias for our BSP so we can switch targets quickly.
 // Uncomment the BSP you included in Cargo.toml, the rest of the code does not need to change.
 use rp_pico as bsp;
-// use sparkfun_pro_micro_rp2040 as bsp;
 
+use embedded_hal::digital::OutputPin;
 mod semaphore;
 
 use bsp::hal::{
@@ -61,9 +60,9 @@ fn main() -> ! {
     // a Pico W and want to toggle a LED with a simple GPIO output pin, you can connect an external
     // LED to one of the GPIO pins, and reference that pin here.
     let mut led_pin = pins.led.into_push_pull_output();
-    let mut yellow =pins.gpio13.into_push_pull_output();
-    let mut green = pins.gpio14.into_push_pull_output();
-    let mut red = pins.gpio11.into_push_pull_output();
+    let yellow =pins.gpio13.into_push_pull_output();
+    let green = pins.gpio14.into_push_pull_output();
+    let red = pins.gpio11.into_push_pull_output();
 
     let mut semaphore = semaphore::Semaphore::new(green, yellow, red);
     semaphore.red_light().unwrap();
@@ -82,9 +81,3 @@ fn main() -> ! {
     
     }
 }
-
-fn green_light() {
-
-}
-
-// End of file

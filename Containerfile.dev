@@ -1,0 +1,15 @@
+FROM rust:latest
+
+RUN apt-get update -y && apt-get install -y \
+    clang \
+    llvm \
+    libstdc++-arm-none-eabi-newlib \
+    minicom \
+    libudev-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN rustup target install thumbv6m-none-eabi
+# If you want to use elf2uf2-rs instead of probe-run, instead do...
+RUN cargo install elf2uf2-rs --locked
+RUN cargo install cargo-binstall
+RUN cargo binstall probe-rs-tools

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dev:
+    build: 
+      context: .
+      dockerfile: Containerfile.dev
+    privileged: true       # Grants access to all devices (use with caution)
+    devices:
+      - /dev/bus/usb:/dev/bus/usb  # Maps host USB bus
+    volumes:
+      - /dev:/dev  # Optional: expose all /dev if needed
+    environment:
+      - DEBIAN_FRONTEND=noninteractive
+    stdin_open: true
+    tty: true

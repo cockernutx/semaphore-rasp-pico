@@ -1,22 +1,21 @@
 use core::convert::Infallible;
 
-use embedded_hal::digital::v2::OutputPin;
+use embedded_hal::digital::OutputPin;
 use rp_pico::hal::gpio::{
-    bank0::{Gpio11, Gpio14, Gpio13},
-    Output, Pin, PushPull,
+    bank0::{Gpio11, Gpio13, Gpio14}, FunctionSio, Pin, PullDown, SioOutput
 };
 
 pub struct Semaphore {
-    green: Pin<Gpio14, Output<PushPull>>,
-    yellow: Pin<Gpio13, Output<PushPull>>,
-    red: Pin<Gpio11, Output<PushPull>>,
+    green: Pin<Gpio14, FunctionSio<SioOutput>, PullDown>,
+    yellow: Pin<Gpio13, FunctionSio<SioOutput>, PullDown>,
+    red: Pin<Gpio11, FunctionSio<SioOutput>, PullDown>,
 }
 
 impl Semaphore {
     pub fn new(
-        green: Pin<Gpio14, Output<PushPull>>,
-        yellow: Pin<Gpio13, Output<PushPull>>,
-        red: Pin<Gpio11, Output<PushPull>>,
+        green: Pin<Gpio14, FunctionSio<SioOutput>, PullDown>,
+        yellow: Pin<Gpio13, FunctionSio<SioOutput>, PullDown>,
+        red: Pin<Gpio11, FunctionSio<SioOutput>, PullDown>,
     ) -> Self {
         Self { green, yellow, red }
     }
