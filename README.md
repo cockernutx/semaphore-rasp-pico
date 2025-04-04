@@ -46,4 +46,10 @@ Para construir um semáforo com Arduino, os seguintes componentes são necessár
 
 Esses componentes são conectados ao Arduino para controlar a sequência de iluminação dos LEDs, simulando o funcionamento de um semáforo real.
 
+# Semáforos e IA
+
+Semáforos inteligentes utilizam Inteligência Artificial (IA) para otimizar o controle do tráfego urbano, adaptando-se em tempo real às condições das vias. Por meio de sensores e câmeras, esses semáforos coletam dados sobre o fluxo de veículos e pedestres, como número, tipo, velocidade e direção. Essas informações são processadas por algoritmos de IA que ajustam dinamicamente os tempos das luzes, melhorando a fluidez do tráfego e reduzindo congestionamentos. ￼
+
+A implementação de semáforos com IA já ocorre em diversas cidades. Por exemplo, em Vitória, sensores detectam o fluxo de veículos, pedestres e ciclistas, permitindo que os semáforos ajustem seus tempos em tempo real para melhorar a mobilidade urbana. ￼
+
 O codigo esta documento com comentarios.
