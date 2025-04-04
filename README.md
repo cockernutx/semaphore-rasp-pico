@@ -1,6 +1,6 @@
 # Semáforo inteligente
 
-# 1. Automação e Inteligência Artificial
+## 1. Automação e Inteligência Artificial
 
 •	O que é automação e como ela evoluiu desde a Revolução Industrial?
 
@@ -14,7 +14,7 @@ A automação tradicional opera com base em regras e instruções predefinidas, 
 
 A IA pode ser integrada a sistemas embarcados, como o Arduino, por meio de frameworks específicos que permitem a execução de modelos de aprendizado de máquina diretamente no hardware. Por exemplo, o AIfES é um framework de IA escrito em C que possibilita o treinamento e a execução de redes neurais artificiais em microcontroladores de recursos limitados, como o Arduino Uno. Isso permite o desenvolvimento de dispositivos personalizados que podem aprender e se adaptar a tarefas específicas sem a necessidade de um computador externo. ￼
 
-# 2. Cidades Inteligentes e Sistemas Automatizados
+## 2. Cidades Inteligentes e Sistemas Automatizados
 
 •	O que caracteriza uma cidade inteligente?
 
@@ -28,7 +28,7 @@ A tecnologia otimiza a mobilidade urbana e a segurança no trânsito por meio de
 
 Sistemas de semáforos inteligentes modernos incorporam sensores avançados e tecnologias de captura de vídeo para coletar dados em tempo real sobre o tráfego. Esses sistemas processam as informações para ajustar os tempos dos sinais, priorizar determinados fluxos de tráfego e melhorar a segurança viária. Por exemplo, algumas cidades implementaram semáforos que detectam a presença de pedestres e ciclistas, ajustando os sinais para oferecer fases verdes mais rápidas para esses usuários. ￼
 
-# 3. Introdução ao Arduino e Componentes Utilizados
+## 3. Introdução ao Arduino e Componentes Utilizados
 	
 •	O que é Arduino e como ele pode ser usado em projetos de automação?
 
@@ -46,10 +46,12 @@ Para construir um semáforo com Arduino, os seguintes componentes são necessár
 
 Esses componentes são conectados ao Arduino para controlar a sequência de iluminação dos LEDs, simulando o funcionamento de um semáforo real.
 
-# Semáforos e IA
+## Semáforos e IA
 
 Semáforos inteligentes utilizam Inteligência Artificial (IA) para otimizar o controle do tráfego urbano, adaptando-se em tempo real às condições das vias. Por meio de sensores e câmeras, esses semáforos coletam dados sobre o fluxo de veículos e pedestres, como número, tipo, velocidade e direção. Essas informações são processadas por algoritmos de IA que ajustam dinamicamente os tempos das luzes, melhorando a fluidez do tráfego e reduzindo congestionamentos. ￼
 
 A implementação de semáforos com IA já ocorre em diversas cidades. Por exemplo, em Vitória, sensores detectam o fluxo de veículos, pedestres e ciclistas, permitindo que os semáforos ajustem seus tempos em tempo real para melhorar a mobilidade urbana. ￼
+
+![Circuito](docs/circuit.png "Circuito")
 
 O codigo esta documento com comentarios.
