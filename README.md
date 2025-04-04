@@ -1,6 +1,6 @@
 # Semáforo inteligente
 
-1. Automação e Inteligência Artificial
+##1. Automação e Inteligência Artificial
 
 •	O que é automação e como ela evoluiu desde a Revolução Industrial?
 
@@ -14,7 +14,7 @@ A automação tradicional opera com base em regras e instruções predefinidas, 
 
 A IA pode ser integrada a sistemas embarcados, como o Arduino, por meio de frameworks específicos que permitem a execução de modelos de aprendizado de máquina diretamente no hardware. Por exemplo, o AIfES é um framework de IA escrito em C que possibilita o treinamento e a execução de redes neurais artificiais em microcontroladores de recursos limitados, como o Arduino Uno. Isso permite o desenvolvimento de dispositivos personalizados que podem aprender e se adaptar a tarefas específicas sem a necessidade de um computador externo. ￼
 
-2. Cidades Inteligentes e Sistemas Automatizados
+##2. Cidades Inteligentes e Sistemas Automatizados
 
 •	O que caracteriza uma cidade inteligente?
 
@@ -28,7 +28,7 @@ A tecnologia otimiza a mobilidade urbana e a segurança no trânsito por meio de
 
 Sistemas de semáforos inteligentes modernos incorporam sensores avançados e tecnologias de captura de vídeo para coletar dados em tempo real sobre o tráfego. Esses sistemas processam as informações para ajustar os tempos dos sinais, priorizar determinados fluxos de tráfego e melhorar a segurança viária. Por exemplo, algumas cidades implementaram semáforos que detectam a presença de pedestres e ciclistas, ajustando os sinais para oferecer fases verdes mais rápidas para esses usuários. ￼
 
-3. Introdução ao Arduino e Componentes Utilizados
+##3. Introdução ao Arduino e Componentes Utilizados
 	
 •	O que é Arduino e como ele pode ser usado em projetos de automação?
 
